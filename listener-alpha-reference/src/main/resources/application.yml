@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    config:
+      server: http://localhost:9999
+  application:
+    name: ws-alpha-configuration-server
+eureka:
+  client:
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    preferIpAddress: true
